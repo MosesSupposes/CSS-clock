@@ -1,0 +1,62 @@
+body {
+    background: skyblue;
+}
+
+.number {
+    font-size: 3.5em;
+}
+
+#clock {
+    margin: 30px auto;
+    border: 20px solid lightsalmon;
+    border-radius: 50%;
+    background: white;
+    height: 450px;
+    width: 450px;
+    position: relative;
+}
+
+#twelve {
+    position: absolute;
+    left: 43%;
+    letter-spacing: 2px;
+    top: 2%;
+    }
+
+#three {
+    position: absolute;
+    top: 39%;
+    left: 88%;
+}
+
+#six {
+    position: absolute;
+    top: 85%;
+    left: 47.5%;
+}
+
+#nine {
+    position: absolute;
+    top: 39%;
+    left: 5%;
+}
+
+#hours {
+    position: absolute;
+    margin: 0 auto;
+    background: #4e4e4e;
+    width: 0.5rem;
+    height: 10rem;
+}
+
+#minutes {
+    background: #4e4e4e;
+    width: 0.5rem;
+    height: 10rem;
+}
+
+#seconds {
+    background: #4e4e4e;
+    width: 0.5rem;
+    height: 10rem;
+}
