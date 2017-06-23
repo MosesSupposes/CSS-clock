@@ -11,8 +11,8 @@ body {
     border: 20px solid lightsalmon;
     border-radius: 50%;
     background: white;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     position: relative;
 }
 
@@ -41,22 +41,45 @@ body {
     left: 5%;
 }
 
-#hours {
-    position: absolute;
-    margin: 0 auto;
-    background: #4e4e4e;
-    width: 0.5rem;
-    height: 10rem;
+#seconds {
+  width: 4px;
+  height: 180px;
+  background-color: gray;
+  margin-left: 198px;
+  margin-top: 40px;
+  animation: tick 60s infinite linear;
+  position: absolute;
 }
 
 #minutes {
-    background: #4e4e4e;
-    width: 0.5rem;
-    height: 10rem;
+  width: 6px;
+  height: 140px;
+  background-color: darkslategray;
+  margin-left: 197px;
+  margin-top: 800px;
+  animation: tick 3600s infinite linear;
+  position: absolute;
 }
 
-#seconds {
-    background: #4e4e4e;
-    width: 0.5rem;
-    height: 10rem;
+#hours {
+  width: 8px;
+  height: 120px;
+  background-color: black;
+  margin-left: 196px;
+  margin-top: 100px;
+  animation: tick 43200s infinite linear;
+  position: absolute;
+}
+
+
+@keyframes tick {
+  0% {
+    transform: tick(0);
+    transform-origin: center bottom;
+  }
+
+  100% {
+    transform: tick(360deg);
+    transform-origin: center bottom;
+  }
 }
